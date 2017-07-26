@@ -42,7 +42,7 @@
 					<img src="img/4.jpg" alt="...">
 				</a>
 			</div>
-			<div class="col-xs-4 col-md-4" id='person' >
+			<div class="col-xs-4 col-md-4" id='person' onclick="clickPerson()">
 				<a href="https://ximendatie.github.io" class="thumbnail">
 					<img src="img/5.jpg" alt="...">
 				</a>
@@ -86,12 +86,15 @@
 //   var s = document.getElementsByTagName("script")[0]; 
 //   s.parentNode.insertBefore(hm, s);
 // })();
-$(document).ready(function(){
-	$('#person').click(function(){
-		$('.container').toggle(1000,function(){
-			$('.poetry').toggle();
-		})
-	})
-})
+// $(document).ready(function(){
+// 	$('#person').click(function(){
+// 		$('.container').toggle(1000,function(){
+// 			$('.poetry').toggle();
+// 		})
+// 	})
+// })
+function clickPerson(){
+	document.getElementsByClassName('container').className('container unshow');
+}
 </script>
 </html>
